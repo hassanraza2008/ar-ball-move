@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AR Ball Move</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/3.3.2/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene
+      embedded
+      arjs="sourceType: webcam; detectionMode: async; debugUIEnabled: false;"
+    >
+      <!-- <a-entity id="floor" geometry="primitive: plane; width: 3; height: 3;" material="color: gray; opacity: 0.5; position: 0 0 0" static-body></a-entity> -->
+
+      <a-entity
+        id="floor"
+        geometry="primitive: plane; width: 3; height: 3;"
+        material="color: gray; opacity: 0.5;"
+        position="0 0 0"
+        static-body
+      ></a-entity>
+
+      <a-sphere
+        id="ball"
+        position="0 0.1 -1"
+        radius="0.2"
+        color="red"
+        dynamic-body
+      ></a-sphere>
+
+      <a-camera
+        position="0 1.6 0"
+        look-controls="pointerLockEnabled: true"
+        cursor="rayOrigin: mouse"
+      ></a-camera>
+    </a-scene>
+
+    <script src="script.js"></script>
+  </body>
+</html>

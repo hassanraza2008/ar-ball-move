@@ -1,0 +1,45 @@
+{
+    "name": "AR Ball Move",
+    "short_name": "AR Ball",
+    "start_url": "/?home=true",
+    "description": "An AR experience to move a ball in augmented reality.",
+    "id": "/?home=true",
+    "display": "standalone",
+    "homepage": "https://hassanraza2008.github.io/to-do-list/",
+    "background_color": "#ffffff",
+    "theme_color": "#ff0000",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "images/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "images/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "images/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "images/favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "48x48"
+        }
+    ]
+  }
+  
